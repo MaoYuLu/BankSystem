@@ -13,8 +13,9 @@ public class MD5Util {
         try {  
             java.security.MessageDigest md = java.security.MessageDigest.getInstance("MD5");  
             md.update(source);  
-            //计算结果是一个128位的长整数
+            //计算结果是一个128位的长整数o
             byte tmp[] = md.digest();  
+            System.out.println();
             //
             char str[] = new char[16 * 2];   
             int k = 0;   
